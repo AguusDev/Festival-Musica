@@ -1,0 +1,15 @@
+/*
+    Cuando importamos otro archivo sass para que este aferrado a este el nombre va sin el guion bajo
+*/
+@import 'base/normalize.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+@import 'base/variables';
+@import 'base/minxins';
+@import 'base/globales';
+
+@import 'layout/header';
+@import 'layout/video';
+@import 'layout/main';
+@import 'layout/galeria';
+@import 'layout/boleto';
+@import 'layout/footer';

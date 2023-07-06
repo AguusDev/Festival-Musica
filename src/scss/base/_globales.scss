@@ -1,0 +1,32 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: $fuentePrincipal;
+    font-size: 1.6rem;
+    &.fijar-body{
+        overflow: hidden;
+    }
+}
+p{
+    font-size: 2rem;
+    color: $negro;
+}
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: $black;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 3rem;
+}

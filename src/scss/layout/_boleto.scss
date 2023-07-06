@@ -1,0 +1,89 @@
+.section4__container{
+    margin: 5rem 0 0 0;
+    padding: 5rem 0;
+    background-color: $verde;
+}
+
+.title__section4{
+    font-size: 2.5rem;
+    text-align: center;
+    color: $blanco;
+}
+.ticket__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 5rem;
+}
+.day__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+
+    width: 95%;
+    max-width: 600px;
+}
+.DayPass{
+    width: 100%;
+    text-align: center;
+    color: $blanco;
+    letter-spacing: 3px;
+}
+.table__ticket{
+    
+    thead{
+        display: flex;
+        justify-content: center;
+    
+        background-color: $rosa;
+        margin: 0;
+        text-transform: uppercase;
+        color: $blanco;
+    }
+    tbody{
+        display: grid;
+        background-color: $blanco;
+        font-weight: 600;
+        font-size: 1.4rem;
+    }   
+}
+.tbody__ticket > tr{
+    padding: 20px;
+    border: .1px solid gray;
+}
+.footer__ticket{
+    margin: 0;
+    width: 100%;
+    background-color: $morado;
+    padding: 1.5rem 0;
+    color: $blanco;
+    text-align: center;
+    font-size: 2.2rem;
+    &:hover{
+        background-color: rgb(71, 32, 90);
+        cursor: pointer;
+    }
+}
+
+
+@include mediaScreen{
+    .ticket__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+   
+
+

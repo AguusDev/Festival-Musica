@@ -1,0 +1,138 @@
+// Info Del Main //
+
+.section1{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 2rem 1rem;
+    text-align: center;
+    column-gap: 15px;
+}
+.img__section1{
+    width: 100%;
+}
+@include mediaScreen{
+    .section1{
+        display: flex;
+        justify-content: center;
+        .section1__item{
+            max-width: 600px;
+            text-align: left;
+            
+        }
+        
+    }
+    .img__section1{
+        min-width: 400px;
+    }
+}
+
+.title__section1{
+    font-size: 3rem;
+}
+.fecha__section1{
+    color: $rosa;
+}
+.parrafo__section1{
+    font-size: 1.7rem;
+}
+
+
+
+// Info Tablas //
+.section2__container{
+    width: 100%;
+}
+
+.section2{
+    background-color: $rosa;
+    padding-bottom: 4rem;
+    
+}
+.title__section2{
+    text-align: center;
+    padding: 3rem;
+    color: $blanco;
+}
+.escenarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+
+}
+.escenarios__viernes, .escenarios__sabados{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 3rem;
+}
+.escenario{
+    width: 100%;
+    
+}
+.table__center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tabla__viernes1 , .tabla__sabado1{
+    background-color: $amarillo;
+    padding: 1rem;
+    
+}
+.tabla__viernes2, .tabla__sabado2{
+    background-color:$verde ;
+    padding: 1rem;
+}
+table{
+    width: 100%;
+}
+tr{
+    padding: 1.2rem;
+}
+// tr:nth-child(even){
+//     background-color: rgba(59, 53, 53, 0.1);
+// }
+
+.tbody-bandas{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+td > span{
+    font-weight: bold;
+}
+.title__dia{
+    color: $blanco;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+@include mediaScreen{
+    .escenarios{
+        display: grid;
+        grid-template-columns: 1fr ;
+        justify-items: center;
+        .escenarios__viernes, .escenarios__sabados{
+            display: flex;
+            flex-direction: row;
+            column-gap: 4rem;
+            max-width: 800px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
